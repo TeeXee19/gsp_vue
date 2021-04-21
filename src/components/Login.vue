@@ -36,6 +36,7 @@
                                             autocomplete="current-password"
                                             :value="userPassword"
                                             label="Enter password"
+                                            :counter="14"
                                             hint="Your password passed! Password rules are not meant to be broken!"
                                             :append-icon="value ? 'mdi-eye' : 'mdi-eye-off'"
                                             @click:append="() => (value = !value)"
@@ -46,10 +47,10 @@
 
                                         <v-btn
                                         color="success"
-                                        class="mr-4"
+                                        class="mr-4 btn btn-primary btn-user btn-block s-btn"
                                         @click="submit"
                                         >
-                                        Validate
+                                        Login
                                         </v-btn>
 
                                     </v-form>
